@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>СП Сметаплан</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="header__logo" href="#top">
+          <img class="logo__img" src="images/logo.png" alt="Лого">
+        </a>
+        <nav class="header__navigation">
+          <button class="menu__btn" type="button">
+            <img src="images/menu.svg" alt="menu btn">
+          </button>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#advantages" class="menu__link">Преимущества</a>
+            </li>
+            <li class="menu__item">
+              <a href="#algorithm" class="menu__link">Как работает</a>
+            </li>
+            <li class="menu__item">
+              <a href="#integration" class="menu__link">Для чего</a>
+            </li>
+            <li class="menu__item">
+              <a href="#slider" class="menu__link">Кейсы</a>
+            </li>
+            <li class="menu__item">
+              <a href="#rate" class="menu__link">Тарифы</a>
+            </li>
+          </ul>
+          <address class="menu__connection">
+            <a href="tel:+84951374949">8 (495) 137 49 49</a>
+            <a href="email:info@smetaplan.ru">info@smetaplan.ru</a>
+            <button class="menu__connection-btn" type="submit" data-fancybox data-src="#modal-login">Войти</button>
+          </address>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="top" id="top">
+      <div class="container">
+        <div class="top__inner">
+          <div class="top__description">
+            <div class="top__title title">
+              Сметаплан
+            </div>
+            <div class="top__text">
+              <span>Верное решение для автоматизации конъюктурного анализа на всех этапах:</span>
+              <ul class="top__info">
+                <li class="top__info-item">от поиска поставщиков
+                </li>
+                <li class="top__info-item">до формирования отчетов</li>
+              </ul>
+            </div>
+
+            <button class="top__btn btn" data-fancybox data-src="#modal-call" type="button">Узнать больше</button>
+          </div>
+          <div class="top__img" style="background-image: url(images/smeta-top.jpg);">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages" id="advantages">
+      <div class="container">
+        <div class="advantages__inner">
+          <div class="advantages__info">
+            <h2 class="advantages__title title">
+              Преимущества
+            </h2>
+            <div class="advantages__text">
+              <p>Автоматизирует рутинные процессы и экономит время</p>
+            </div>
+          </div>
+          <div class="advantages__numbers">
+            <div class="advantages__item">
+              90%
+              <span>на этапе поиска поставщиков</span>
+            </div>
+            <div class="advantages__item">
+              100%
+              <span>на этапе формирования запросов и рассылке писем с запросами поставщикам</span>
+            </div>
+            <div class="advantages__item">
+              50%
+              <span>на этапе получения ответов от поставщиков</span>
+            </div>
+            <div class="advantages__item">
+              100%
+              <span>на этапе формирования отчетов и книги прайсов</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="algorithm" id="algorithm">
+      <div class="container">
+        <div class="algorithm__inner">
+          <h2 class="algorithm__title title">Алгоритм работы</h2>
+          <div class="algorithm__content">
+            <div class="algorithm__item">
+              <span>1</span>
+
+              <div class="algorithm__info">
+                <p>добавление позиций</p>
+              </div>
+            </div>
+            <div class="algorithm__item">
+              <span>2</span>
+              <div class="algorithm__info">
+                <p>формирование шаблона письма для рассылки поставщикам</p>
+              </div>
+            </div>
+            <div class="algorithm__item">
+              <span>3</span>
+              <div class="algorithm__info">
+                <p>автоподбор поставщиков на основе введенных кодов КСР</p>
+              </div>
+            </div>
+            <div class="algorithm__item">
+              <span>4</span>
+              <div class="algorithm__info">
+                <p>выбор поставщиков для рассылки</p>
+              </div>
+            </div>
+            <div class="algorithm__item">
+              <span>5</span>
+              <div class="algorithm__info">
+                <p>автоматическая рассылка писем с запросами на предоставление ТКП</p>
+              </div>
+            </div>
+            <div class="algorithm__item">
+              <span>6</span>
+              <div class="algorithm__info">
+                <p>получение ответов от поставщиков</p>
+              </div>
+            </div>
+            <div class="algorithm__item">
+              <span>7</span>
+              <div class="algorithm__info">
+                <p>автоматическое формирование отчета по конъюктурному анализу</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="functional">
+      <div class="container">
+        <h2 class="functional__title title">Функционал «СметаПлан»</h2>
+
+        <div class="functional__item">
+          <div class="functional__img" style="background-image: url(images/funk-1.png);"></div>
+          <div class="functional__content">
+            <p class="functional__service">Моментальная загрузка любого количества позиций</p>
+            <p class="functional__info">В системе интегрированы шаблоны, позволяющие загрузить неограниченное количество
+              позиций всего за пару
+              кликов</p>
+          </div>
+        </div>
+
+        <div class="functional__item">
+          <div class="functional__content">
+            <p class="functional__service">Объемная база данных поставщиков по всей России</p>
+            <p class="functional__info">Дает возможность связаться со всеми поставщиками по рассылке, что бы ваш запрос
+              не остался незамеченным</p>
+          </div>
+          <div class="functional__img" style="background-image: url(images/funk-2.png); background-position: right;">
+          </div>
+        </div>
+
+        <div class="functional__item">
+          <div class="functional__img" style="background-image: url(images/funk-3.png);"></div>
+          <div class="functional__content">
+            <p class="functional__service">Настраиваемые шаблоны писем для рассылки поставщикам</p>
+            <p class="functional__info">Удобный и понятный текстовый редактор позволяет настраивать шаблоны писем,
+              используемые для рассылки поставщикам</p>
+          </div>
+        </div>
+
+        <div class="functional__item">
+          <div class="functional__content">
+            <p class="functional__service">Выбор максимально подходящих поставщиков из каталога </p>
+            <p class="functional__info">В СметаПлане вы можете с легкостью отобрать поставщиков по количеству
+              закрываемых позиций, рейтингу и местоположению</p>
+          </div>
+          <div class="functional__img" style="background-image: url(images/funk-4.png); background-position: right;">
+          </div>
+        </div>
+
+        <div class="functional__item">
+          <div class="functional__img" style="background-image: url(images/funk-5.png);"></div>
+          <div class="functional__content">
+            <p class="functional__service">Ручной режим добавления поставщиков и отправки запросов</p>
+            <p class="functional__info">Для обеспечения максимального удобства и гибкости рабочего процесса в системе
+              предусмотрен ручной режим добавления поставщиков и отправки запросов по конкретному поставщику</p>
+          </div>
+        </div>
+
+        <div class="functional__item">
+          <div class="functional__content">
+            <p class="functional__service">Автоматическое формирование отчета для внутренней аналитики </p>
+            <p class="functional__info">Система содержит множество параметров и переменных, которые могут быть полезны
+              при выполнении повседневных задач.
+              Вы можете отметить нужные параметры и выгрузить данные в форме редактируемого документа для дальнейшей
+              работы с ними</p>
+          </div>
+          <div class="functional__img" style="background-image: url(images/funk-6.png); background-position: right;">
+          </div>
+        </div>
+
+        <div class="functional__item">
+          <div class="functional__img" style="background-image: url(images/funk-7.png);"></div>
+          <div class="functional__content">
+            <p class="functional__service">Автоматическое формирование отчета по конъюктурному анализу</p>
+            <p class="functional__info">Отчет полностью соответствует новой методике определения сметной стоимости
+              строительства (Приказ Минстроя № 421/пр от 40.08.2020)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="integration" id="integration">
+      <div class="container">
+        <div class="integration__inner">
+          <h2 class="integration__title title">Что дает интеграция системы</h2>
+          <div class="integration__items">
+            <div class="integration__item">
+              <img class="integration__img" src="images/filter.svg" alt="">
+              <div class="integration__content">
+                <p>
+                  Оптимизацию на уровне рабочего процесса
+                </p>
+              </div>
+              <div class="integration__info">
+                <p>
+                  за счет автоматического подбора поставщиков на основе веденного кода КСР
+                </p>
+              </div>
+            </div>
+            <div class="integration__item">
+              <img class="integration__img" src="images/raketa.svg" alt="">
+              <div class="integration__content">
+                <p>
+                  Ускорить разработку сметной документации до 50%
+                </p>
+              </div>
+              <div class="integration__info">
+                <p>
+                  благодаря автоматическому формированию запросов для поставщиков и моментальной рассылке поставщикам
+                  запросов на предоставление ТКП
+                </p>
+              </div>
+            </div>
+            <div class="integration__item">
+              <img class="integration__img" src="images/clock.svg" alt="">
+              <div class="integration__content">
+                <p>
+                  Вовремя подать сметную документацию на экспертизу
+                </p>
+              </div>
+              <div class="integration__info">
+                <p>
+                  благодаря функции гарантированного закрытия позиций вы получите все необходимые ТКП от поставщиков
+                  точно в срок
+                </p>
+              </div>
+            </div>
+            <div class="integration__item">
+              <img class="integration__img" src="images/money.svg" alt="">
+              <div class="integration__content">
+                <p>
+                  Помогает сократить расходы
+                  на разработку проектно-сметной документации на 30%
+                </p>
+              </div>
+              <div class="integration__info">
+                <p>
+                  за счет автоматического формирования отчета по конъюнктурному анализу и книги прайсов по новой форме
+                </p>
+              </div>
+            </div>
+            <div class="integration__item">
+              <img class="integration__img" src="images/auto.svg" alt="">
+              <div class="integration__content">
+                <p>
+                  Автоматизировать весь процесс проведения конъюнктурного анализа
+                </p>
+              </div>
+              <div class="integration__info">
+                <p>
+                  сметчики компании «ИндигоСофт» сами проставят необходимые коды КСР, а колл-центр обеспечит получение
+                  любогообъема ТКП в максимально сжатые сроки
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider" id="slider">
+      <div class="container">
+        <div class="slider__info">
+          <h2 class="slider__title title">Кейсы</h2>
+          <div class="slider__info-count">
+            <span class="slider__info-count--now">1</span>
+            из
+            <span>4</span>
+          </div>
+        </div>
+        <div class="slider__inner">
+
+          <div class="slider__item">
+            <div class="slider__content">
+              <div class="slider__content-left">
+                <h3 class="slider__item-title">Модернизации газоперерабатывающего завода</h3>
+                <p>
+                  <span>Задача:</span> В короткие сроки провести конъюнктурный анализ материалов и оборудования,
+                  заложенного в проект
+                  модернизации газоперерабатывающего завода. Суммарная численность позиций по материалам и оборудованию
+                  в спецификациях к проекту составила более 1 500 позиций
+                </p>
+                <p>
+                  Заказчик принял решение отдать конъюнктурный анализ на аутсорсинг по причине высокой загруженности
+                  сметного отдела, сжатых сроков подачи проектной документации на экспертизу
+                </p>
+                <p>
+                  <span>Решение:</span> Несмотря на масштабность проекта, с помощью автоматизации подбора поставщиков и
+                  автоматизации
+                  формирования отчета удалось выполнить работу за 15 рабочих дней, сформировав автоматизированный отчет
+                  в
+                  соответствии
+                  со всеми требованиями учреждения экспертизы (все коммерческие предложения от поставщиков содержали
+                  реквизиты, номер, дату составления документа, а также печать организации и подпись ответственного
+                  лица)
+                </p>
+                <p>
+                  Стоимость конъюнктурного анализа по проекту удалось значительно снизить за счет автоматизации
+                  основных
+                  работ
+                  с помощью вэб-сервиса «СметаПлан»
+                </p>
+
+              </div>
+
+              <div class="slider__content-right">
+                <img src="images/slider-bg.jpg" alt="">
+                <p>
+                  <span>Результат:</span> Заказчик смог вовремя подать проектную документацию на экспертизу, избежав
+                  штрафных санкций
+                  со стороны Генерального подрядчика.
+                </p>
+                <p>
+                  При этом Заказчику не пришлось привлекать к конъюнктурному анализу силы своих специалистов, что
+                  позволило избежать «аврального» режима работы, сдвигов сроков разработки других проектов, ошибок в них
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="slider__item">
+            <div class="slider__content">
+              <div class="slider__content-left">
+                <h3 class="slider__item-title">Модернизации газоперерабатывающего завода</h3>
+                <p>
+                  <span>Задача:</span> В короткие сроки провести конъюнктурный анализ материалов и оборудования,
+                  заложенного в проект
+                  модернизации газоперерабатывающего завода. Суммарная численность позиций по материалам и оборудованию
+                  в спецификациях к проекту составила более 1 500 позиций
+                </p>
+                <p>
+                  Заказчик принял решение отдать конъюнктурный анализ на аутсорсинг по причине высокой загруженности
+                  сметного отдела, сжатых сроков подачи проектной документации на экспертизу
+                </p>
+                <p>
+                  <span>Решение:</span> Несмотря на масштабность проекта, с помощью автоматизации подбора поставщиков и
+                  автоматизации
+                  формирования отчета удалось выполнить работу за 15 рабочих дней, сформировав автоматизированный отчет
+                  в
+                  соответствии
+                  со всеми требованиями учреждения экспертизы (все коммерческие предложения от поставщиков содержали
+                  реквизиты, номер, дату составления документа, а также печать организации и подпись ответственного
+                  лица)
+                </p>
+                <p>
+                  Стоимость конъюнктурного анализа по проекту удалось значительно снизить за счет автоматизации
+                  основных
+                  работ
+                  с помощью вэб-сервиса «СметаПлан»
+                </p>
+
+              </div>
+
+              <div class="slider__content-right">
+                <img src="images/slider-bg.jpg" alt="">
+                <p>
+                  <span>Результат:</span> Заказчик смог вовремя подать проектную документацию на экспертизу, избежав
+                  штрафных санкций
+                  со стороны Генерального подрядчика.
+                </p>
+                <p>
+                  При этом Заказчику не пришлось привлекать к конъюнктурному анализу силы своих специалистов, что
+                  позволило избежать «аврального» режима работы, сдвигов сроков разработки других проектов, ошибок в них
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="slider__item">
+            <div class="slider__content">
+              <div class="slider__content-left">
+                <h3 class="slider__item-title">Модернизации газоперерабатывающего завода</h3>
+                <p>
+                  <span>Задача:</span> В короткие сроки провести конъюнктурный анализ материалов и оборудования,
+                  заложенного в проект
+                  модернизации газоперерабатывающего завода. Суммарная численность позиций по материалам и оборудованию
+                  в спецификациях к проекту составила более 1 500 позиций
+                </p>
+                <p>
+                  Заказчик принял решение отдать конъюнктурный анализ на аутсорсинг по причине высокой загруженности
+                  сметного отдела, сжатых сроков подачи проектной документации на экспертизу
+                </p>
+                <p>
+                  <span>Решение:</span> Несмотря на масштабность проекта, с помощью автоматизации подбора поставщиков и
+                  автоматизации
+                  формирования отчета удалось выполнить работу за 15 рабочих дней, сформировав автоматизированный отчет
+                  в
+                  соответствии
+                  со всеми требованиями учреждения экспертизы (все коммерческие предложения от поставщиков содержали
+                  реквизиты, номер, дату составления документа, а также печать организации и подпись ответственного
+                  лица)
+                </p>
+                <p>
+                  Стоимость конъюнктурного анализа по проекту удалось значительно снизить за счет автоматизации
+                  основных
+                  работ
+                  с помощью вэб-сервиса «СметаПлан»
+                </p>
+
+              </div>
+
+              <div class="slider__content-right">
+                <img src="images/slider-bg.jpg" alt="">
+                <p>
+                  <span>Результат:</span> Заказчик смог вовремя подать проектную документацию на экспертизу, избежав
+                  штрафных санкций
+                  со стороны Генерального подрядчика.
+                </p>
+                <p>
+                  При этом Заказчику не пришлось привлекать к конъюнктурному анализу силы своих специалистов, что
+                  позволило избежать «аврального» режима работы, сдвигов сроков разработки других проектов, ошибок в них
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="slider__item">
+            <div class="slider__content">
+              <div class="slider__content-left">
+                <h3 class="slider__item-title">Модернизации газоперерабатывающего завода</h3>
+                <p>
+                  <span>Задача:</span> В короткие сроки провести конъюнктурный анализ материалов и оборудования,
+                  заложенного в проект
+                  модернизации газоперерабатывающего завода. Суммарная численность позиций по материалам и оборудованию
+                  в спецификациях к проекту составила более 1 500 позиций
+                </p>
+                <p>
+                  Заказчик принял решение отдать конъюнктурный анализ на аутсорсинг по причине высокой загруженности
+                  сметного отдела, сжатых сроков подачи проектной документации на экспертизу
+                </p>
+                <p>
+                  <span>Решение:</span> Несмотря на масштабность проекта, с помощью автоматизации подбора поставщиков и
+                  автоматизации
+                  формирования отчета удалось выполнить работу за 15 рабочих дней, сформировав автоматизированный отчет
+                  в
+                  соответствии
+                  со всеми требованиями учреждения экспертизы (все коммерческие предложения от поставщиков содержали
+                  реквизиты, номер, дату составления документа, а также печать организации и подпись ответственного
+                  лица)
+                </p>
+                <p>
+                  Стоимость конъюнктурного анализа по проекту удалось значительно снизить за счет автоматизации
+                  основных
+                  работ
+                  с помощью вэб-сервиса «СметаПлан»
+                </p>
+
+              </div>
+
+              <div class="slider__content-right">
+                <img src="images/slider-bg.jpg" alt="">
+                <p>
+                  <span>Результат:</span> Заказчик смог вовремя подать проектную документацию на экспертизу, избежав
+                  штрафных санкций
+                  со стороны Генерального подрядчика.
+                </p>
+                <p>
+                  При этом Заказчику не пришлось привлекать к конъюнктурному анализу силы своих специалистов, что
+                  позволило избежать «аврального» режима работы, сдвигов сроков разработки других проектов, ошибок в них
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rate" id="rate">
+      <div class="container">
+        <div class="rate__inner">
+          <h2 class="rate__title title">Тарифы</h2>
+          <div class="rate__items">
+
+            <div class="rate__item">
+              <p class="rate__name">Минимум</p>
+              <ul class="rate__list">
+                <li>Срок действия лицензии</li>
+                <span>3 месяца</span>
+                <li>Количество рабочих мест</li>
+                <span>1 место</span>
+                <li>Дополнительное рабочее место</li>
+                <span>+ 2000 ₽</span>
+                <li>Гарантированное закрытие</li>
+                <span>25 позиций</span>
+              </ul>
+              <span class="rate__price">15 000<sup>₽</sup></span>
+              <button class="rate__btn btn" type="button">Подключиться</button>
+            </div>
+
+            <div class="rate__item">
+              <p class="rate__name">Комфорт</p>
+              <ul class="rate__list">
+                <li>Срок действия лицензии</li>
+                <span>12 месяца</span>
+                <li>Количество рабочих мест</li>
+                <span>1 место</span>
+                <li>Дополнительное рабочее место</li>
+                <span>+ 2000 ₽</span>
+                <li>Гарантированное закрытие</li>
+                <span>100 позиций</span>
+              </ul>
+              <span class="rate__price">54 000<sup>₽</sup></span>
+              <button class="rate__btn btn" type="button">Подключиться</button>
+            </div>
+
+            <div class="rate__item">
+              <p class="rate__name">Индивидуальный</p>
+              <ul class="rate__list">
+                <li>Срок действия лицензии</li>
+                <span>Индивидуально</span>
+                <li>Количество рабочих мест</li>
+                <span>Индивидуально</span>
+                <li>Дополнительное рабочее место</li>
+                <span>Индивидуально</span>
+                <li>Гарантированное закрытие</li>
+                <span>Индивидуально</span>
+              </ul>
+              <span class="rate__price">Индивидуально<sup></sup></span>
+              <button class="rate__btn btn" type="button">Настроить тариф</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service">
+      <div class="container">
+        <h2 class="service__title title">Клиентский сервис</h2>
+        <div class="service__inner">
+
+          <div class="service__items">
+
+            <div class="service__item service__item--help">
+              <span class="service__name">Персональный консультант</span>
+              <p class="service__info">Специалисты ИндигоСофт подробно и доступно расскажут вам обо всех функциях и
+                особенностях сервиса, а также проведут обучение пользователей</p>
+            </div>
+
+            <div class="service__item service__item--tech">
+              <span class="service__name">Техническая поддержка</span>
+              <p class="service__info">На протяжении всего времени работы с сервисом мы предоставляем нашим клиентам
+                бесплатную и качественную техническую поддержку</p>
+            </div>
+
+            <div class="service__item service__item--expert">
+              <span class="service__name">Помощь эксперта</span>
+              <p class="service__info">Горят сроки или что то не получается? Квалифицированные эксперты ИндигоСофт с
+                радостью помогут вам в работе</p>
+            </div>
+
+          </div>
+
+          <div class="service__img" style="background-image: url(images/service-bg.jpg);"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="connection">
+      <div class="container">
+        <div class="connection__inner">
+          <div class="connection__question">
+            <p class="connection__text">Заинтересовал продукт или остались вопросы?</p>
+          </div>
+          <form class="connection__form">
+            <div class="connection__info">
+              <p>
+                Оставьте заявку на обратный звонок и мы свяжемся с вами в ближайшее время
+              </p>
+            </div>
+            <input class="connection__name" type="text" placeholder="Имя">
+            <input class="connection__phone" type="tel" placeholder="+ 7 (123) 456 78 90">
+            <input class="connection__email" type="email" placeholder="Email">
+            <button class="connection__btn btn" type="button">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="#" class="footer__logo">
+          <img class="logo__img" src="images/logo.png" alt="Лого">
+        </a>
+        <address class="footer__info">
+          <a class="footer__address" href="#">
+            г. Санкт-Петербург,
+            ул. Краснопутиловская, 69
+          </a>
+          <a href="tel:+84951374949">8 (495) 137 49 49</a>
+          <a href="email:info@smetaplan.ru">info@smetaplan.ru</a>
+        </address>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="modal-call" id="modal-call" style="display: none; overflow-y:auto;">
+    <form class="connection__form">
+      <div class="connection__info">
+        <p>
+          Оставьте заявку на обратный звонок и мы свяжемся с вами в ближайшее время
+        </p>
+      </div>
+      <input class="connection__name" type="text" placeholder="Имя">
+      <input class="connection__phone" type="tel" placeholder="+ 7 (123) 456 78 90">
+      <input class="connection__email" type="email" placeholder="Email">
+      <button class="connection__btn" type="button">Отправить заявку</button>
+    </form>
+  </div>
+
+  <div class="modal-login" id="modal-login" style="display: none; text-align: center; overflow-y:auto;">
+    <form class="connection__form">
+      <div class="connection__info">
+        <p>
+          Вход в личный кабинет
+        </p>
+      </div>
+      <input class="connection__email" type="email" placeholder="Email">
+      <input class="connection__pass" type="password" placeholder="password">
+      <button class="connection__btn" type="button">Подтвердить</button>
+    </form>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

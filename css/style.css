@@ -1,0 +1,996 @@
+html {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1194px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+body {
+  font-family: "Ubuntu";
+  color: #000;
+  background-color: #fff;
+  line-height: 1.3;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+.title {
+  font-family: "TT Travels";
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+.header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.header__inner {
+  display: flex;
+  margin-top: 17px;
+  margin-bottom: 35px;
+}
+
+.header__navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 24px;
+}
+
+.menu__btn {
+  display: none;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__item + .menu__item {
+  margin-left: 24px;
+}
+
+.menu__link {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.menu__link:hover {
+  text-shadow: 1px 1px 2px black, 0 0 1em orange;
+}
+
+.menu__connection {
+  margin-left: 110px;
+}
+
+.menu__connection a {
+  color: #000;
+  font-weight: 400;
+  margin-right: 24px;
+}
+
+.menu__connection-btn {
+  color: #f18813;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  background-color: #fff;
+  border: 1px solid #f18813;
+  border-radius: 5px;
+  padding: 9px 30px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.menu__connection-btn:hover {
+  background-color: #f18813;
+  color: #fff;
+  border-radius: 0;
+}
+
+.btn {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #f18813;
+  background-color: #fff;
+  outline: 1px solid #f18813;
+}
+
+.top {
+  padding-top: 150px;
+  margin-bottom: 155px;
+}
+
+.top__inner {
+  display: flex;
+}
+
+.top__description {
+  max-width: 455px;
+  padding: 90px 0;
+}
+
+.top__title {
+  font-family: "TT Travels";
+  font-weight: 700;
+  font-size: 56px;
+}
+
+.top__info,
+.top__text {
+  font-family: "Ubuntu";
+  font-size: 24px;
+  font-weight: 400;
+  list-style-image: url("../images/list.png") !important;
+}
+
+.top__info-item {
+  margin-left: 22px;
+  padding-left: 10px;
+}
+
+.top__btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  background: #f18813;
+  border-radius: 5px;
+  border: none;
+  padding: 15px 73px;
+  margin-top: 37px;
+  cursor: pointer;
+  outline: none;
+}
+
+.top__img {
+  background-repeat: no-repeat;
+  background-position: right center;
+  width: 666px;
+  min-height: 450px;
+  margin-left: auto;
+}
+
+.advantages {
+  margin-bottom: 150px;
+}
+
+.advantages__inner {
+  display: flex;
+}
+
+.advantages__info {
+  margin-right: 300px;
+}
+
+.advantages__title {
+  font-family: "TT Travels";
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.advantages__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #000;
+  max-width: 250px;
+}
+
+.advantages__numbers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 40px;
+  column-gap: 100px;
+}
+
+.advantages__item {
+  font-family: "TT Travels";
+  font-weight: 700;
+  font-size: 36px;
+  color: #f18813;
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__item span {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  max-width: 245px;
+}
+
+.algorithm {
+  margin-bottom: 150px;
+}
+
+.algorithm__title {
+  font-family: "TT Travels";
+  margin-bottom: 24px;
+}
+
+.algorithm__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+}
+
+.algorithm__item {
+  padding-top: 46px;
+  background: #fafafa;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+  max-width: 260px;
+  height: 222px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+}
+
+.algorithm__item span {
+  position: relative;
+  z-index: 99;
+}
+
+.algorithm__item span::after {
+  content: "";
+  background-image: url(../images/star.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 49px;
+  height: 48px;
+  top: -10px;
+  right: -20px;
+  z-index: -1;
+}
+
+.algorithm__info {
+  margin-top: 34px;
+  color: #000;
+  font-size: 16px;
+}
+
+.functional {
+  background-color: #f7f7f7;
+  padding: 130px 0;
+}
+
+.functional__item {
+  display: flex;
+  align-items: center;
+}
+
+.functional__img {
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 666px;
+  height: 450px;
+  margin-left: auto;
+}
+
+.functional__content {
+  max-width: 410px;
+}
+
+.functional__service {
+  font-family: "TT Travels";
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.functional__info {
+  font-size: 18px;
+}
+
+.integration {
+  padding: 150px 0;
+}
+
+.integration__title {
+  margin-bottom: 72px;
+}
+
+.integration__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.integration__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 364px;
+  height: 290px;
+  background-color: #fafafa;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 24px 0;
+}
+
+.integration__img {
+  margin-bottom: 18px;
+}
+
+.integration__content {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  width: 270px;
+  margin-bottom: 10px;
+}
+
+.integration__info {
+  font-weight: normal;
+  font-size: 16px;
+  width: 270px;
+}
+
+.slider {
+  padding-bottom: 150px;
+}
+
+.slider__info {
+  display: flex;
+  position: relative;
+}
+
+.slider__info-count {
+  font-family: "TT Travels";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  padding-top: 12px;
+  margin-left: 69px;
+}
+
+.slider__item-title {
+  font-family: "TT Travels";
+  font-weight: bold;
+  font-size: 24px;
+  width: 440px;
+  margin-bottom: 24px;
+}
+
+.slider__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__content-left {
+  max-width: 530px;
+}
+
+.slider__content-left p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.slider__content-left span {
+  font-weight: bold;
+}
+
+.slider__content-right {
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 520px;
+}
+
+.slider__content-right p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.slider__content-right span {
+  font-weight: bold;
+}
+
+.slider__content-right img {
+  margin-bottom: 37px;
+}
+
+.slick-prev,
+.slick-next {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  outline: 0;
+  position: absolute;
+  top: -60px;
+}
+
+.slick-prev {
+  left: 25%;
+}
+
+.slick-next {
+  right: 70%;
+}
+
+.rate__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rate__item {
+  display: flex;
+  flex-direction: column;
+  background: #fafafa;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+  max-width: 361px;
+  text-align: center;
+}
+
+.rate__item li {
+  margin: 24px 0 12px;
+  font-weight: normal;
+  font-size: 16px;
+  padding: 0 60px;
+}
+
+.rate__item span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.rate__item .rate__name {
+  background-color: #f18813;
+  border-radius: 10px 10px 0px 0px;
+  padding: 32px 0;
+  font-family: "TT Travels";
+  font-weight: bold;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.rate__item .rate__list {
+  padding: 40px 0 25px;
+}
+
+.rate__item .rate__price {
+  text-align: center;
+  font-family: "TT Travels";
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: auto;
+  margin-bottom: 25px;
+}
+
+.rate__price sup {
+  font-size: 18px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.rate__btn {
+  border: none;
+  background-color: #f18813;
+  padding: 17px 0;
+  font-family: "TT Travels";
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0 60px 51px;
+  border-radius: 5px;
+}
+
+.service {
+  padding: 150px 0 150px;
+}
+
+.service__inner {
+  display: flex;
+}
+
+.service__items {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service__item {
+  margin-bottom: 46px;
+  max-width: 480px;
+  position: relative;
+  padding-left: 100px;
+}
+
+.service__item::before {
+  content: "";
+  background-image: url(../images/service-1.svg);
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+  top: 5px;
+  left: 0;
+  z-index: -1;
+}
+
+.service__item--tech::before {
+  content: "";
+  background-image: url(../images/service-2.svg);
+}
+
+.service__item--expert::before {
+  content: "";
+  background-image: url(../images/service-3.svg);
+}
+
+.service__name {
+  font-family: "TT Travels";
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.service__info {
+  font-family: "Ubuntu";
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.service__img {
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 666px;
+  height: 502px;
+  margin-left: auto;
+}
+
+.connection {
+  margin-bottom: 150px;
+}
+
+.connection__inner {
+  display: flex;
+}
+
+.connection__question {
+  background-color: #f18813;
+  border-radius: 20px 0px 0px 20px;
+  padding: 230px 45px 230px 60px;
+  max-width: 606px;
+}
+
+.connection__text {
+  font-family: "TT Travels";
+  font-weight: bold;
+  font-size: 36px;
+  color: #ffffff;
+  width: 500px;
+}
+
+.connection__form {
+  background-color: #fafafa;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+}
+
+.connection__info {
+  width: 350px;
+  margin: 0 auto;
+  margin: 84px 0 37px;
+}
+
+.connection__info p {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.connection__form {
+  padding: 0 100px;
+}
+
+.connection__name,
+.connection__phone,
+.connection__email,
+.connection__pass {
+  background: #ffffff;
+  border: 1px solid #d7d6d6;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 20px;
+}
+
+.connection__btn {
+  background-color: #f18813;
+  border-radius: 5px;
+  padding: 17px 103px;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.footer {
+  border-top: 3px solid #e7e7e7;
+  padding: 50px 0 50px;
+}
+
+.footer__inner {
+  display: flex;
+}
+
+.footer__logo {
+  margin-right: 83px;
+}
+
+.footer__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer__info a {
+  color: #000;
+  font-weight: normal;
+  font-size: 18px;
+  max-width: 240px;
+}
+
+.footer__info a:hover {
+  text-shadow: 1px 1px 2px black, 0 0 1em orange;
+}
+
+@media (max-width: 1200px) {
+  .top__inner {
+    display: block;
+  }
+  .top__img {
+    margin: 0 auto;
+  }
+  .top__description {
+    margin: 0 auto;
+  }
+  .slider__info-count {
+    display: none;
+  }
+  .slider__item-title {
+    max-width: 250px;
+    margin-bottom: 30px;
+  }
+  .slick-dots {
+    display: flex;
+  }
+  .slick-dots button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #c4c4c4;
+    font-size: 0;
+    border: none;
+  }
+  .slick-dots li + li {
+    margin-left: 15px;
+  }
+  .slick-active button {
+    background-color: #f18813;
+  }
+  .connection__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .connection__question {
+    border-radius: 10px 10px 0px 0px;
+    padding: 85px 45px 85px 60px;
+  }
+  .connection__form {
+    background-color: #fafafa;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+    padding: 0px 120px 57px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .header__logo {
+    z-index: 2;
+  }
+  .menu__list {
+    position: absolute;
+    right: 0;
+    width: 100vw;
+    top: 55px;
+    background-color: #fafafa;
+    display: block;
+    text-align: center;
+    transform: translateY(-200%);
+    z-index: 1;
+    transition: all 0.01s;
+  }
+  .menu__list.active {
+    transform: translateY(0%);
+    width: 200px;
+    background: #fafafa;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+  }
+  .menu__item + .menu__item {
+    margin-left: 0;
+  }
+  .menu__link {
+    display: block;
+    padding: 15px 0;
+  }
+  .menu__list-item:hover {
+    border-bottom: none;
+  }
+  .header__navigation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .menu__connection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+  }
+  .menu__connection a {
+    margin-right: 70px;
+  }
+  .menu__btn {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 23px;
+    background-color: transparent;
+    border: none;
+    z-index: 2;
+  }
+  .advantages__inner {
+    display: block;
+  }
+  .advantages__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .advantages__info {
+    margin: 0 0 50px 0;
+  }
+  .functional__item {
+    display: block;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  .functional__img {
+    display: none;
+  }
+  .functional__service {
+    margin-bottom: 12px;
+  }
+  .functional__content {
+    margin: 0 auto;
+  }
+  .slider__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .slick-dots {
+    justify-content: center;
+  }
+  .service__img {
+    display: none;
+  }
+  .service {
+    padding: 70px 0 70px;
+  }
+  .footer__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__info a {
+    max-width: 100%;
+    margin-bottom: 12px;
+  }
+  .footer__logo {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu__connection a {
+    display: none;
+  }
+  .menu__connection {
+    margin: 0 auto;
+  }
+  .top__title,
+  .advantages__title,
+  .algorithm__title,
+  .functional__title,
+  .integration__title,
+  .slider__title,
+  .rate__title,
+  .service__title {
+    font-size: 32px;
+  }
+  .top__info {
+    font-size: 16px;
+  }
+  .service__name {
+    font-size: 18px;
+  }
+  .service__info {
+    font-size: 16px;
+  }
+  .top__btn {
+    padding: 8px 34px;
+    margin-top: 25px;
+  }
+  .top__img {
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .top {
+    padding-top: 75px;
+  }
+  .advantages__item span {
+    font-size: 16px;
+  }
+  .algorithm__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+  }
+  .functional {
+    padding: 60px 0;
+  }
+  .functional__service {
+    font-size: 22px;
+  }
+  .functional__info {
+    font-size: 18px;
+  }
+  .integration__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .slider__item-title {
+    font-size: 18px;
+  }
+  .slider__content-left p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .rate__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rate__item {
+    margin-bottom: 50px;
+  }
+  .connection__question {
+    border-radius: 10px 10px 0px 0px;
+    padding: 60px 10px 60px 10px;
+  }
+  .connection__text {
+    font-size: 24px;
+  }
+  .connection__form {
+    background-color: #fafafa;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.04);
+    border-radius: 0 0 10px 10px;
+    padding: 0;
+  }
+  .modal-login {
+    max-width: 100%;
+  }
+  .modal-call {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  .menu__connection-btn {
+    color: #f18813;
+    font-family: "Ubuntu";
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    background-color: #fff;
+    border: 1px solid #f18813;
+    border-radius: 5px;
+    padding: 5px 15px;
+    outline: none;
+    cursor: pointer;
+  }
+  .top__img {
+    display: none;
+  }
+  .advantages__numbers {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
+  .top {
+    margin-bottom: 0;
+  }
+  .algorithm__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .integration__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .algorithm__item {
+    width: 100%;
+  }
+  .functional__service {
+    font-size: 18px;
+  }
+  .functional__info {
+    font-size: 16px;
+  }
+  .connection__question {
+    padding: 25px 5px 25px 5px;
+    width: 100%;
+  }
+  .connection__text {
+    font-size: 18px;
+    max-width: 100%;
+  }
+  .connection__info {
+    width: 100%;
+    margin: 0 auto;
+    margin: 84px 0 37px;
+  }
+  .connection__name,
+  .connection__phone,
+  .connection__email {
+    max-width: 300px;
+    margin-bottom: 12px;
+    padding: 20px;
+  }
+  .connection__btn {
+    padding: 12px 75px;
+    font-size: 16px;
+  }
+  .footer__info a {
+    font-size: 13px;
+  }
+}
